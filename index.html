@@ -1,89 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>@Academia</title>
+<title>Concierge Management Prototype</title>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="pic/logo.png"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
+    <link rel="stylesheet" type="text/css" href="customer.css">
+</head>
 <style>
-body {font-family: "Lato", sans-serif
-}
-.padding-016 {
-  padding: 0 16px !important;
-}
-.w3-button:hover {
-  color: #FF6347 !important;
-}
+body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
-.curriculum {
-  display: none;
-}
-.d-flex {
-  display: flex;
-  justify-content: space-between
-}
-.d-flex > div {
-  margin-left: auto;
-}
-.logo {
-  margin-right: auto;
-}
-.custom-lightgrey{
-  background: #D3D3D3;
-}
-.custom-font-orange{
-  color : #FF6347;
-}
-.menu a.w3-bar-item:hover {   
-  color : #FF6347;
-}
-a:hover {
-  background-color: #FF6347;
-}
-pslogan{
-  font-size: 30px;
-}
-.ad-padding{
-  padding: 150px;
-}
 </style>
 <body>
 
-
-
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar custom-lightgrey w3-card d-flex">
-    <a href="#" class="w3-bar-item w3-button padding-016 logo">
-      <img src="pic/logo.png" style="height:46px">
-    </a>
+  <div class="w3-bar w3-black w3-card w3-opacity">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <div class="right-side w3-hide-small">
-      <a href="#value" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
-      <a href="#whatwedo" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WHAT WE DO</a>
-      <a href="#curriculum" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CURRICULUM</a>
-      <a href="#features" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHANGES</a>
-      
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button" href="enrollment.html">Enrollment</a>
-          <a href="#bridgeprogram" class="w3-bar-item w3-button">Bridge Program</a>
-          <a href="#badgingsys" class="w3-bar-item w3-button">Badging System</a>
-        </div>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#booking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONCIERGE</a>
+    <a href="#inventory" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INVENTORY</a>
+    <a href="#history" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HISTORY</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="services">SERVICES <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#top" class="w3-bar-item w3-button">TOP</a>
+        <a href="#" class="w3-bar-item w3-button">PREMIUM</a>
+        <a href="#" class="w3-bar-item w3-button">SPECIALTY</a>
       </div>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block custom-lightgrey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#value" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
-  <a href="#whatwedo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WHAT WE DO</a>
-  <a href="#curriculum" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CURRICULUM</a>
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
@@ -93,266 +51,82 @@ pslogan{
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="pic/homepage1.jpeg" style="height:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>
-        <img src="pic/background_hero.png" alt="">
-      </h1>
-      <pslogan><b>Focus your learning, empower your future</b></pslogan>   
+    <img src="pic/cover.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Luxury Rentals and Concierge Services</h3>
+      <p><b>Vacation in the finest properties hand selected by Jayne - with an unparalleled level of service and hospitality</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="pic/homepage12.jpeg" style="width:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>
-        <img src="pic/background_hero.png" alt="">
-      </h1>
-      <pslogan><b>Focus your learning, empower your future</b></pslogan>   
+    <img src="pic/bg-photo-1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Homes</h3>
+      <p><b>The finest homes in the most desirable locations are across a range of price points.</b></p>    
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="pic/homepage15.jpeg" style="width:100%">
-    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>
-          <img src="pic/background_hero.png" alt="">
-      </h1>
-      <pslogan><b>Focus your learning, empower your future</b></pslogan>    
+    <img src="pic/sunshine.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Personal</h3>
+      <p><b>Our specialty is customer service.</b></p>    
     </div>
   </div>
 
-  <!-- The Value Section -->
-  <div class="w3-container w3-content w3-center ad-padding" style="max-width:1000px, height:700px", id="value">
-    <h2 class="w3-wide">ABOUT US</h2>
-    <p class="w3-center">We are a school changing the definition of learning to broaden and define career outcomes.</p>
-    <p class = "w3-justify">Our institute benefits students who want to have focused learning and diverse directional thinking.  With our unique semester structure, we focus on new and upcoming technologies and challenge students to learn multiple disciplines but place a focus on their career.</p>
+  <!-- The CONCIERGE Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="booking">
+    <h2 class="w3-wide">CONCIERGE</h2>
+    <p class="w3-opacity"><i>Customized services</i></p>
+    <p class="w3-justify">Demo how to book an inventory.</p>
+    <form action="StringFilter.html" method="get">
+      <button class="w3-button w3-black w3-section" type="submit" formtarget="_blank">Book Now</button>
+    </form>
+
   </div>
 
-  <!-- The What we do Section -->
-  <div class="custom-lightgrey" id="whatwedo">
-    <div class="w3-container w3-content ad-padding" style="max-width:1000px">
-      <h2 class="w3-wide w3-center">WHAT WE DO</h2>
-        <p class = "w3-justify w3-center">
-        Focus your learning, empower your future.
-        <p class = "w3-justify w3-center">We are an educational institute changing the definition of learning to broaden and define career outcomes.</p>
-        <p class = "w3-justify w3-center">We have disrupted the classroom layout.</p>
-        <p class = "w3-justify w3-center">We have disrupted the typical curriculum.</p>
-        <p class = "w3-justify w3-center">We have disrupted your thinking.</p>
-        <p class = "w3-justify w3-center">We are a centre that will make you industry ready and confident in your skills. Ready to move forward in this innovative world.</p>
-        </p>
-    </div>
+  <!-- The Inventory Section -->
+  <!-- <div class="w3-black" id="inventory">
+      <h2 class="w3-wide w3-center">INVENTORY</h2>
+      <p class="w3-opacity w3-center"><i>Check available items</i></p><br>
+          <div id ="visualization" style="width:auto; height:auto; float:left; display:inline"></div>
+          <div id="inv_div" style="width:auto; height:auto; float:left; display:inline"></div>
+  </div> -->
+
+  <div  id="inventory">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">INVENTORY</h2>
+      <p class="w3-opacity w3-center"><i>Check available items</i></p><br>
+          <div id ="visualization" style="width: 100%;"></div>
+          <div id="inv_div"></div>    
+    </div>  
   </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
+  <!-- The History Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="history">
+    <h2 class="w3-wide w3-center">HISTORY</h2>
+    <p class="w3-opacity w3-center"><i>Show the booking history</i></p>
+    <!--Div that will hold the dashboard-->
+    <div id="dashboard" style="width:100%;">
+        <!--Divs that will hold each control and chart-->
+        <div id="control"></div>
+        <div id="chart" style="position: relative; width: 100%; height: 200px;"></div>
+        
+        <div id="junk_div" style="display: none;"></div>
     </div>
-  </div>
 
-  <!-- The Curriculum Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="curriculum">
-    <div class="w3-content" style="max-width:700px">
-   
-      <h2 class="w3-center w3-padding-48"><span class="w3-wide">CURRICULUM</span></h2>
-    
-      <div class="w3-row w3-center w3-card w3-padding">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Year1');" id="myLink">
-          <div class="w3-col s6 tablink w3-dark-grey">Year 1</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Year2');">
-          <div class="w3-col s6 tablink">Year 2</div>
-        </a>
-      </div>
-
-      <div id="Year1" class="w3-container menu w3-padding-48 w3-card" style="display: block;">
-        <h5>September – December</h5>
-        <p class="w3-text-grey curr-aligntext">In two weeks increments, we allow students to enjoy focused learning on the following topics:<br> 
-            • Internet of Things <br>
-            • BIG DATA <br>
-            • Web Dev <br>
-            • HTML & CSS <br>
-            • Mobile Applications <br>
-            • Game Dev <br>
-            • Digital professional footprint <br>
-            • Career opportunities <br>
-          Students will find their focus; choose their interest <br>
-        </p>
-      
-        <h5>January – April</h5>
-        <p class="w3-text-grey">Full semester of one of the following:<br>
-          • Internet of Things  <br>
-          • BIG DATA  <br>
-          • Web Development  <br>
-          - JavaScript
-          - Node.js
-          - Jquery
-          - SQL server
-          - HTML & CSS  <br>
-          • Game Development  <br>
-          Assessment : Weekly Paragraph write-up of current events within your specialty.<br>
-          </p>
-      
-        <h5>May - August</h5>
-        <p class="w3-text-grey">Agile Team Work, Course Collision
-          Two core courses:
-          - entrepreneurship (creating a business plan, budgeting etc.)          
-          Soft skills: Leadership
-          Teamwork
-          Cultural Competence
-          Emotional intelligence
-          </p>
-      </div>
-
-      <div id="Year2" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
-        <h5>September – December</h5>
-        <p class="w3-text-grey">Full semester of one of the following: <br>
-          • IOT <br>
-          • BIG DATA<br>
-          • Web Dev<br>
-          • Game Dev<br>
-          </p>
-      
-        <h5>January – April</h5>
-        <p class="w3-text-grey">Agile Team Work</p> 
-          <p class="w3-text-grey">Students are placed or choose to create a team for sessions of projects</p>
-          <p class="w3-text-grey">Biweekly hack, mentor days, ted talks from industry leaders scheduled 
-            <li class="w3-text-grey">Morning session:Study and prep</li>
-            <li class="w3-text-grey">Afternoon session: free project creation time</li></p>
-          <p class="w3-text-grey">In addition: 
-            <li class="w3-text-grey">Effective elevator pitch</li>
-            <li class="w3-text-grey">Polish personal brand on social media</li>
-            <li class="w3-text-grey">Update create resume</li>
-            <li class="w3-text-grey">Connect to opportunities</li>
-            <li class="w3-text-grey">Lunch & Learns</li>
-          </p>
-      
-        <h5>May - August</h5>
-        <p class="w3-text-grey">Partner Bridge Program: hackathon, industry year event , match day</p>
-      
-      </div>  
-    </div>
-  </div>
-
-
-  <!-- Features other schools -->
-  <div class="w3-row" id="features">
-    <div class="w3-half w3-black w3-container w3-center" style="height:800px">
-      <div class="w3-padding-64">
-        <h1>Traditional</h1>
-        <img src="pic/capture1.jpg" class="w3-margin w3-circle" alt="Person" style="width:50%">
-        <div class="w3-left-align w3-padding-large">
-          <li>Professors design curriculums, use the same one each year , update it every 4 years</li>
-          <li>Classroom setup is the same. Professor at the front , students sit in rows</li>
-          <li>Learning is condensed</li>
-          <li>Limited application of theory</li>
-          <li>Final assessment: essay or multiple choice exams</li>
-        </div>
-      </div>
-
-    </div>
-    <div class="w3-half w3-blue-grey w3-container" style="height:800px">
-      <div class="w3-padding-64 w3-center">
-        <h1>Our Program</h1>
-        <img src="pic/capture.jpg" class="w3-margin w3-circle" alt="Person" style="width:50%">
-        <div class="w3-left-align w3-padding-large">
-          <li>Ted talk styled sessions hosted by industry leaders</li>
-          <li>Classroom setup: White boards, open space, different types of spaces digital tablet as desks, hardware lab on site; access to our resource app , Schoolify</li>
-          <li>At the beginning of every day, students state their intentions for the day and makes any requests for support they may need. – More collaboration</li>
-          <li>Assessments are more done in hackathon style or pitch compettions</li>
-          <li>Students are given a topic each week and have the day to use the resources available to hone their knowledge.</li>
-          <li>Students are encouraged to document their learning in whatever way they see fit</li>
-          <li>Monday Morning News : Share industry based news or any current events in ted talk style.</li>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- The Admission Process Section -->
-  <div class="w3-container w3-content w3-center ad-padding" style="max-width:800px" id="value">
-    <h2 class="w3-wide">ADMISSIONS PROCESS</h2>
-    <p class="w3-justify">We are a school changing the definition of learning to broaden and define career outcomes.</p>
-    <p class = "w3-justify">What We look for?</p>
-    <p>Passion.  Grit.  Culture Fit</p>
-    <p class = "w3-justify"> ADMISSIONS PROCESS</p>
-
-      <p class = "w3-justify", stype = "font-size: 18px">1. Apply Online</p>
-      <p class = "w3-justify">A short application introducing yourself, education, experience and anything else that showcases you. Anything that will help us understand more about you</p>
-      <p class = "w3-justify">2. Interview</p>
-      <p class = "w3-justify">After reviewing your application, a member from our admission team will invite you to an interview. We want to meet you!</p>
+    <!--<div id="example5.3" style="height: 200px;"></div>-->
+    <div id="table_div"></div>
 
   </div>
 
   
-  <!-- The Bridge Program Section -->
-  <div class="custom-lightgrey" id="bridgeprogram">
-    <div class="w3-container w3-content ad-padding" style="max-width:800px">
-      <h2 class="w3-wide w3-center">STEM JOB READY IMMERSIVE BRIDGE PROGRAM</h2>
-      <p class = "w3-justify">
-        <li>    Certified STEM program</li>
-        <li>    Industry Accepted </li>
-        <li>    2 week prep module - a good basis to test knowledge basis required before class</li>
-        <li>    Making you industry ready</li>
-        <li>    2 projects – live and online</li>
-        <li>    collaborating in agile teams</li>
-        <li>    4 weeks in class; Saturday and Sunday 9am -4pm</li>
-        <li>    Integration of front end and back end programming language</li>
-        <li>    Projects will vary</li>
-
-      </p>   
-    </div>
+  <!-- The Services Section -->
+  <div  id="top">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Services</h2>
+      <p class="w3-opacity w3-center"><i>Check our services</i></p><br> 
+    </div>  
   </div>
 
-    <!-- The Badging System Section -->
-    <div id="badgingsys">
-      <div class="w3-container w3-content ad-padding" style="max-width:800px">
-        <h2 class="w3-wide w3-center">BADGING SYSTEM</h2>
-        <p class = "w3-justify w3-center"> Instead of grades, we using a badging system. </p>
-        <p class = "w3-justify w3-center"> Each student receives a skill badge from the panel of judges if they have satisfied the challenge or problem effectively.</p>
-        <p class = "w3-justify w3-center"> However, in addition to that if you have excelled at the challenge, you will receive “ribbons” Gold, Silver or Bronze from the panel. </p> 
-        <p class = "w3-justify w3-center"> These are digital merits that students can add to their industry-ready portfolios. </p>   
-      </div>
-    </div>
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content ad-padding" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Interested in more information? Feel free to ask anything!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Toronto, CA<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: hello@cademia.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
   
 <!-- End Page Content -->
 </div>
@@ -366,7 +140,7 @@ pslogan{
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by team Awesome</p>
+  <p class="w3-medium">Cooperate with <a href="https://jaynescottages.com/" target="_blank">Jayne's Cottages</a></p>
 </footer>
 
 <script>
@@ -404,20 +178,6 @@ window.onclick = function(event) {
   }
 }
 
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
 </script>
 
 </body>

@@ -1,37 +1,37 @@
-/* biz-red */
+/* biz-blue */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic,latin-ext';
 
 html{
   height: 100%;
 }
-.formoid-biz-red{
+.formoid-biz-blue{
   margin:0 auto;
 }
-.formoid-biz-red>div,
-.formoid-biz-red>.title{
+.formoid-biz-blue>div,
+.formoid-biz-blue>.title{
   margin: 8px;
 }
-.formoid-biz-red .error-field .required{
+.formoid-biz-blue .error-field .required{
   color:#FF9999;
 }
-.formoid-biz-red .error-field input,
-.formoid-biz-red .error-field input[type=text],
-.formoid-biz-red .error-field input[type=password],
-.formoid-biz-red .error-field input[type=email],
-.formoid-biz-red .error-field input[type=url],
-.formoid-biz-red .error-field input[type=date],
-.formoid-biz-red .error-field input[type=number],
-.formoid-biz-red .error-field input[type=tel],
-.formoid-biz-red .error-field textarea{
+.formoid-biz-blue .error-field input,
+.formoid-biz-blue .error-field input[type=text],
+.formoid-biz-blue .error-field input[type=password],
+.formoid-biz-blue .error-field input[type=email],
+.formoid-biz-blue .error-field input[type=url],
+.formoid-biz-blue .error-field input[type=date],
+.formoid-biz-blue .error-field input[type=number],
+.formoid-biz-blue .error-field input[type=tel],
+.formoid-biz-blue .error-field textarea{
   border-color:#D893A1;
   background-color: #FBE6F2;
 }
-.formoid-biz-red label.error{
+.formoid-biz-blue label.error{
   display:inline-block;
   font-size:0.9em;
 }
-.formoid-biz-red .error,
-.formoid-biz-red .error #recaptcha_widget_div{
+.formoid-biz-blue .error,
+.formoid-biz-blue .error #recaptcha_widget_div{
   padding: 3px 14px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
@@ -43,60 +43,60 @@ html{
   border-color: #eed3d7;
   color: #c09853;
 }
-.formoid-biz-red .error h4 {
+.formoid-biz-blue .error h4 {
   color: #b94a48;
   margin: 0;
 }
 
-.formoid-biz-red .error .close {
+.formoid-biz-blue .error .close {
   position: relative;
   top: -2px;
   right: -21px;
   line-height: 20px;
 }
-.formoid-biz-red .column{
+.formoid-biz-blue .column{
   float:left; 
 }
 /* width = parseInt(100/columns.length)*/
-.formoid-biz-red .column1{ width:100%;}
-.formoid-biz-red .column2{ width:50%; }
-.formoid-biz-red .column3{ width:33%; }
-.formoid-biz-red .column4{ width:25%; }
-.formoid-biz-red .column5{ width:20%; }
+.formoid-biz-blue .column1{ width:100%;}
+.formoid-biz-blue .column2{ width:50%; }
+.formoid-biz-blue .column3{ width:33%; }
+.formoid-biz-blue .column4{ width:25%; }
+.formoid-biz-blue .column5{ width:20%; }
 
 
 
-.formoid-biz-red .large{
+.formoid-biz-blue .large{
   width: 100%;
   *width: 94%;
 }
-.formoid-biz-red .medium{
+.formoid-biz-blue .medium{
   width: 50%;
   *width: 47%;
 }
-.formoid-biz-red .small{
+.formoid-biz-blue .small{
   width: 25%;
   *width: 23%;
 }
 
-.formoid-biz-red textarea.large{
+.formoid-biz-blue textarea.large{
   width: 100%;
   *width: 94%;
   height: 20em;
 }
-.formoid-biz-red textarea.medium{
+.formoid-biz-blue textarea.medium{
   width: 100%;
   *width: 94%;
   height: 10em;
 }
-.formoid-biz-red textarea.small{
+.formoid-biz-blue textarea.small{
   width: 100%;
   *width: 94%;
   height: 5.5em;
 }
 
 /* address select style */
-.formoid-biz-red .element-address .country {
+.formoid-biz-blue .element-address .country {
   position: relative;
 }
 
@@ -169,67 +169,67 @@ Metro style
   font-weight: normal;
   font-style: normal;
 }
-.formoid-biz-red{
+.formoid-biz-blue{
   font-size: 0.9em;
 }
-.formoid-biz-red,
-.formoid-biz-red input[type=button],
-.formoid-biz-red .btn,
-.formoid-biz-red input[type=submit] {
+.formoid-biz-blue,
+.formoid-biz-blue input[type=button],
+.formoid-biz-blue .btn,
+.formoid-biz-blue input[type=submit] {
   outline: none;
   font-family: inherit;
 }
-.formoid-biz-red>div,
-.formoid-biz-red .elements > div{
+.formoid-biz-blue>div,
+.formoid-biz-blue .elements > div{
   position: relative;
   margin-left: 35px;
   margin-right: 35px;
 }
-.formoid-biz-red .elements {
+.formoid-biz-blue .elements {
   margin: 0;
 }
 
-.formoid-biz-red h2 {
+.formoid-biz-blue h2 {
   margin: 0;
   font-size: 1.2em;
 }
-.formoid-biz-red h3.title {
+.formoid-biz-blue h3.title {
   margin-bottom: 0.5em;
   margin-top: 1.5em;
 }
-.formoid-biz-red h3.section-break-title {
+.formoid-biz-blue h3.section-break-title {
   font-size: 1em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.formoid-biz-red h2,
-.formoid-biz-red h3.title,
-.formoid-biz-red h3.section-break-title {
+.formoid-biz-blue h2,
+.formoid-biz-blue h3.title,
+.formoid-biz-blue h3.section-break-title {
   text-transform: uppercase;
   font-weight: normal;
 }
 
-.formoid-biz-red label {
+.formoid-biz-blue label {
 	display: block;
 	margin-bottom: 3px;
 	clear: both;
 }
-.formoid-biz-red div, .formoid-biz-red span, .formoid-biz-red label, .formoid-biz-red input, .formoid-biz-red textarea, .formoid-biz-red select, .formoid-biz-red button, .formoid-biz-red ul, .formoid-biz-red li, .formoid-biz-red a{
+.formoid-biz-blue div, .formoid-biz-blue span, .formoid-biz-blue label, .formoid-biz-blue input, .formoid-biz-blue textarea, .formoid-biz-blue select, .formoid-biz-blue button, .formoid-biz-blue ul, .formoid-biz-blue li, .formoid-biz-blue a{
 	font-family: inherit;
 	color: inherit;
 }
 
-.formoid-biz-red .elements {
+.formoid-biz-blue .elements {
   color: #D3D3D3;
 }
-.formoid-biz-red .element-separator,
-.formoid-biz-red .element-separator > div,
-.formoid-biz-red .elements > .element-separator,
+.formoid-biz-blue .element-separator,
+.formoid-biz-blue .element-separator > div,
+.formoid-biz-blue .elements > .element-separator,
 #designer .element-separator .container {
   margin: 0;
   padding: 0;
 }
-.formoid-biz-red .element-separator h3 {
+.formoid-biz-blue .element-separator h3 {
   margin-left: 38px;
   margin-right: 38px;
 }
@@ -250,31 +250,31 @@ Not advised to edit stuff below this line
 */
 
 /* submit + title */
-.formoid-biz-red div.submit,
-.formoid-biz-red div.title{
+.formoid-biz-blue div.submit,
+.formoid-biz-blue div.title{
   margin: 0;
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #f6f6f6;
   background-color: rgba(0,0,0,0.02);
 }
-.formoid-biz-red div.title h2{
+.formoid-biz-blue div.title h2{
   margin-left: 38px;
 }
-.formoid-biz-red div.title{
+.formoid-biz-blue div.title{
   padding-top: 35px;
   padding-bottom: 1em;
 }
-.formoid-biz-red div.submit{
+.formoid-biz-blue div.submit{
   vertical-align: middle;
   text-align: right;
 }
 
 
 /* Button & submit*/
-.formoid-biz-red .btn,
-.formoid-biz-red input[type=button],
-.formoid-biz-red input[type=submit]{
+.formoid-biz-blue .btn,
+.formoid-biz-blue input[type=button],
+.formoid-biz-blue input[type=submit]{
   display: -moz-inline-box;
   display: inline-block;
   text-align: left;
@@ -287,18 +287,18 @@ Not advised to edit stuff below this line
   appearance: none;
 }
 
-.formoid-biz-red .btn:hover,
-.formoid-biz-red input[type=button]:hover {
+.formoid-biz-blue .btn:hover,
+.formoid-biz-blue input[type=button]:hover {
   text-decoration: none;
 }
 
-.formoid-biz-red .btn[disabled],
-.formoid-biz-red input[type=button][disabled] {
+.formoid-biz-blue .btn[disabled],
+.formoid-biz-blue input[type=button][disabled] {
   cursor: default;
   opacity: 0.65;
 }
 
-.formoid-biz-red input[type=submit] {
+.formoid-biz-blue input[type=submit] {
 	font-size: 1em;
   text-align: center;
   opacity: 1;
@@ -309,46 +309,46 @@ Not advised to edit stuff below this line
   text-transform: uppercase;
 }
 
-.formoid-biz-red input[type=submit]:hover {
+.formoid-biz-blue input[type=submit]:hover {
   opacity: 0.8;
   color: #ffffff;
   text-decoration: none;
 }
-.formoid-biz-red .btn{
+.formoid-biz-blue .btn{
   width: 100%;
   font-size: 1.1em;
 }
 
 
 /* Select */
-.formoid-biz-red .element-select select,
-.formoid-biz-red .country {
+.formoid-biz-blue .element-select select,
+.formoid-biz-blue .country {
   position: relative;
   cursor: pointer;
 }
-.formoid-biz-red .element-select div{
+.formoid-biz-blue .element-select div{
 	display: block;
 }
-.formoid-biz-red .element-select div span{
+.formoid-biz-blue .element-select div span{
   position: relative;
 	display: inline-block;
 	white-space: nowrap;
 	vertical-align: middle;
 	width: 100%;
 }
-.formoid-biz-red .element-select div span.required{
+.formoid-biz-blue .element-select div span.required{
 	display: initial;
 }
 
 
 /* File input */
-.formoid-biz-red .element-file label{
+.formoid-biz-blue .element-file label{
   position: relative;
 }
-.formoid-biz-red .element-file .title{
+.formoid-biz-blue .element-file .title{
   position: static;
 }
-.formoid-biz-red .element-file .button {
+.formoid-biz-blue .element-file .button {
   position: absolute;
   text-transform: uppercase;
   top: 0;
@@ -365,11 +365,11 @@ Not advised to edit stuff below this line
   transition: opacity 0.2s;
   z-index: 1;
 }
-.formoid-biz-red .element-file .button:hover {
+.formoid-biz-blue .element-file .button:hover {
   box-shadow: none;
   opacity: 0.8;
 }
-.formoid-biz-red .element-file .file_input {
+.formoid-biz-blue .element-file .file_input {
   position: absolute;
   top: 0;
   right: 0;
@@ -380,13 +380,13 @@ Not advised to edit stuff below this line
 	filter: alpha(opacity=0);
 	width: 100%;
 }
-.formoid-biz-red .element-file .file_text{
+.formoid-biz-blue .element-file .file_text{
   overflow: hidden;
   cursor: pointer;
 	bottom: 0;
 }
-* html .formoid-biz-red .element-file .file_input,
-*+html .formoid-biz-red .element-file .file_input{
+* html .formoid-biz-blue .element-file .file_input,
+*+html .formoid-biz-blue .element-file .file_input{
   position: relative;
 	left: auto;
 	right: auto;
@@ -396,22 +396,22 @@ Not advised to edit stuff below this line
   opacity: 1;
 	filter: alpha(opacity=100);
 }
-* html .formoid-biz-red .element-file .button,
-*+html .formoid-biz-red .element-file .button{
+* html .formoid-biz-blue .element-file .button,
+*+html .formoid-biz-blue .element-file .button{
 	display: none;
 }
-* html .formoid-biz-red .element-file .title,
-*+html .formoid-biz-red .element-file .title{
+* html .formoid-biz-blue .element-file .title,
+*+html .formoid-biz-blue .element-file .title{
 	display: block;
 }
 
 
 /* Radio & checkbox */
-.formoid-biz-red div.element-checkbox, .formoid-biz-red div.element-radio{
+.formoid-biz-blue div.element-checkbox, .formoid-biz-blue div.element-radio{
   overflow:hidden;
 }
-.formoid-biz-red input[type=checkbox],
-.formoid-biz-red input[type=radio]{
+.formoid-biz-blue input[type=checkbox],
+.formoid-biz-blue input[type=radio]{
   z-index:1;
   position: absolute;
   float: left;
@@ -423,14 +423,14 @@ Not advised to edit stuff below this line
   cursor: pointer;
 }
 
-.formoid-biz-red input[type=radio]+span,
-.formoid-biz-red input[type=checkbox]+span{
+.formoid-biz-blue input[type=radio]+span,
+.formoid-biz-blue input[type=checkbox]+span{
   position: relative;
   cursor: pointer;
 }
-.formoid-biz-red input[type=radio]+span:before,
-.formoid-biz-red input[type=checkbox]+span:before,
-.formoid-biz-red input[type=radio]+span:after {
+.formoid-biz-blue input[type=radio]+span:before,
+.formoid-biz-blue input[type=checkbox]+span:before,
+.formoid-biz-blue input[type=radio]+span:after {
   position: relative;
   display: inline-block;
   font-family: formoid;
@@ -445,12 +445,12 @@ Not advised to edit stuff below this line
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.formoid-biz-red input[type=radio]+span:before,
-.formoid-biz-red input[type=radio]+span:after {
+.formoid-biz-blue input[type=radio]+span:before,
+.formoid-biz-blue input[type=radio]+span:after {
   content: '\e005';
   border-radius: 50%;
 }
-.formoid-biz-red input[type=radio]+span:after {
+.formoid-biz-blue input[type=radio]+span:after {
   width: 0.65em;
   height: 0.65em;
   background: transparent;
@@ -462,26 +462,26 @@ Not advised to edit stuff below this line
   border-radius: 50%;
 }
 
-.formoid-biz-red input[type=checkbox]+span:before {
+.formoid-biz-blue input[type=checkbox]+span:before {
   content: "\e004";
 }
 
 
 /* rating */
-.formoid-biz-red .rating {
+.formoid-biz-blue .rating {
   overflow: hidden;
   display: inline-block;
   position: relative;
 }
-.formoid-biz-red .rating-input {
+.formoid-biz-blue .rating-input {
   display: none;
 }
-.formoid-biz-red .rating-star:after {
+.formoid-biz-blue .rating-star:after {
   font-family: formoid;
   font-size: 2em;
 }
-.formoid-biz-red .rating-star,
-.formoid-biz-red .rating:hover .rating-star {
+.formoid-biz-blue .rating-star,
+.formoid-biz-blue .rating:hover .rating-star {
   position: relative;
   cursor: default;
   clear: none;
@@ -490,25 +490,25 @@ Not advised to edit stuff below this line
   width: 2.2em;
   height: 2em;
 }
-.formoid-biz-red .rating-star:after,
-.formoid-biz-red .rating:hover .rating-star:after {
+.formoid-biz-blue .rating-star:after,
+.formoid-biz-blue .rating:hover .rating-star:after {
   content: '\e006';
   color: #000;
 }
 
 
 
-.formoid-biz-red input[type=text],
-.formoid-biz-red input[type=tel],
-.formoid-biz-red input[type=password],
-.formoid-biz-red input[type=email],
-.formoid-biz-red input[type=url],
-.formoid-biz-red input[type=date],
-.formoid-biz-red input[type=number],
-.formoid-biz-red textarea,
-.formoid-biz-red .element-file .file_text,
-.formoid-biz-red  select,
-.formoid-biz-red button{
+.formoid-biz-blue input[type=text],
+.formoid-biz-blue input[type=tel],
+.formoid-biz-blue input[type=password],
+.formoid-biz-blue input[type=email],
+.formoid-biz-blue input[type=url],
+.formoid-biz-blue input[type=date],
+.formoid-biz-blue input[type=number],
+.formoid-biz-blue textarea,
+.formoid-biz-blue .element-file .file_text,
+.formoid-biz-blue  select,
+.formoid-biz-blue button{
   color: #D3D3D3;
   border: none;
   border-bottom: solid 1px rgba(255,255,255,0.2);
@@ -529,18 +529,18 @@ Not advised to edit stuff below this line
   appearance: none;
   font-size: 1.1em;
 }
-.formoid-biz-red .element-address input[type=text],
-.formoid-biz-red .element-name input[type=text],
-.formoid-biz-red .element-file .file_text,
-.formoid-biz-red textarea{
+.formoid-biz-blue .element-address input[type=text],
+.formoid-biz-blue .element-name input[type=text],
+.formoid-biz-blue .element-file .file_text,
+.formoid-biz-blue textarea{
 	width: 100%;
 	*width: 94%;
   margin-bottom: 7px;
 }
-.formoid-biz-red textarea{
+.formoid-biz-blue textarea{
     height: auto;
 }
-.formoid-biz-red  select{
+.formoid-biz-blue  select{
 	cursor: pointer;
 	text-align: left;
 	width: 100%;
@@ -548,7 +548,7 @@ Not advised to edit stuff below this line
 
 
 /* NAME last first */
-.formoid-biz-red .element-name .nameFirst{
+.formoid-biz-blue .element-name .nameFirst{
   width: 40%;
 	*width: 39%;
 	left: 0;
@@ -558,7 +558,7 @@ Not advised to edit stuff below this line
 	zoom: 1;
 	*display: inline;
 }
-.formoid-biz-red .element-name .nameLast{
+.formoid-biz-blue .element-name .nameLast{
   width: 55%;
 	*width: 50%;
   display: inline-block;
@@ -568,8 +568,8 @@ Not advised to edit stuff below this line
 }
 
 /* ADDRESS */
-.formoid-biz-red .element-address .city,
-.formoid-biz-red .element-address .zip{
+.formoid-biz-blue .element-address .city,
+.formoid-biz-blue .element-address .zip{
   width: 47%;
 	*width: 44%;
   display: inline-block;
@@ -578,8 +578,8 @@ Not advised to edit stuff below this line
 	vertical-align: top;
   margin-right: 6%;
 }
-.formoid-biz-red .element-address .state,
-.formoid-biz-red .element-address .country{
+.formoid-biz-blue .element-address .state,
+.formoid-biz-blue .element-address .country{
   width: 47%;
 	*width: 44%;
   display: inline-block;
@@ -587,47 +587,47 @@ Not advised to edit stuff below this line
 	*display: inline;
 	vertical-align: top;
 }
-.formoid-biz-red .element-address .country select{
+.formoid-biz-blue .element-address .country select{
   cursor: pointer;
 }
-.formoid-biz-red .element-address label,
-.formoid-biz-red .element-name label{
+.formoid-biz-blue .element-address label,
+.formoid-biz-blue .element-name label{
   font-size: 0.82em;
 }
-.formoid-biz-red .element-address label.title,
-.formoid-biz-red .element-name label.title{
+.formoid-biz-blue .element-address label.title,
+.formoid-biz-blue .element-name label.title{
   font-size: 1.1em;
 }
 
 /* type number */
-.formoid-biz-red input[type=number]::-webkit-inner-spin-button, 
-.formoid-biz-red input[type=number]::-webkit-outer-spin-button{ 
+.formoid-biz-blue input[type=number]::-webkit-inner-spin-button, 
+.formoid-biz-blue input[type=number]::-webkit-outer-spin-button{ 
 	-webkit-appearance: none;
 } 
 
 /* recaptcha */
-.formoid-biz-red .recaptchatable,
-.formoid-biz-red .recaptchatable #recaptcha_image,
-.formoid-biz-red .recaptchatable #recaptcha_challenge_field_holder input{
+.formoid-biz-blue .recaptchatable,
+.formoid-biz-blue .recaptchatable #recaptcha_image,
+.formoid-biz-blue .recaptchatable #recaptcha_challenge_field_holder input{
 	border-bottom: 1px solid #e5e5e5 !important;
 }
 
 /* ERRORs */
-.formoid-biz-red .error-field input,
-.formoid-biz-red .error-field input[type=text],
-.formoid-biz-red .error-field input[type=password],
-.formoid-biz-red .error-field input[type=email],
-.formoid-biz-red .error-field input[type=url],
-.formoid-biz-red .error-field input[type=date],
-.formoid-biz-red .error-field input[type=number],
-.formoid-biz-red .error-field input[type=tel],
-.formoid-biz-red .error-field textarea{
+.formoid-biz-blue .error-field input,
+.formoid-biz-blue .error-field input[type=text],
+.formoid-biz-blue .error-field input[type=password],
+.formoid-biz-blue .error-field input[type=email],
+.formoid-biz-blue .error-field input[type=url],
+.formoid-biz-blue .error-field input[type=date],
+.formoid-biz-blue .error-field input[type=number],
+.formoid-biz-blue .error-field input[type=tel],
+.formoid-biz-blue .error-field textarea{
   border-color:#A92828;
   background-color: #200000;
 }
 
-.formoid-biz-red .error,
-.formoid-biz-red .error #recaptcha_widget_div{
+.formoid-biz-blue .error,
+.formoid-biz-blue .error #recaptcha_widget_div{
   background-color: #cc3d3d;
   color: #fff;
   text-shadow: none;
@@ -709,50 +709,50 @@ Not advised to edit stuff below this line
 
 
 @media all and (max-width:400px){
-  .formoid-biz-red .element-radio .column,
-  .formoid-biz-red .element-checkbox .column,
-	.formoid-biz-red .element-name .nameFirst,
-	.formoid-biz-red .element-name .nameLast,
-	.formoid-biz-red .element-address .city,
-	.formoid-biz-red .element-address span.state,
-	.formoid-biz-red .element-address .zip,
-	.formoid-biz-red .element-address .country{
+  .formoid-biz-blue .element-radio .column,
+  .formoid-biz-blue .element-checkbox .column,
+	.formoid-biz-blue .element-name .nameFirst,
+	.formoid-biz-blue .element-name .nameLast,
+	.formoid-biz-blue .element-address .city,
+	.formoid-biz-blue .element-address span.state,
+	.formoid-biz-blue .element-address .zip,
+	.formoid-biz-blue .element-address .country{
     width: 100%;
 		display: block;
 		margin-right: 0;
   }
 }
-/* .formoid-biz-red color scheme begin */
-.formoid-biz-red input[type=submit],
-.formoid-biz-red .element-file .button{
-  background-color: #C33F22;
+/* .formoid-biz-blue color scheme begin */
+.formoid-biz-blue input[type=submit],
+.formoid-biz-blue .element-file .button{
+  background-color: #22B4C3;
 }
-.formoid-biz-red .rating:hover .rating-star:hover:after,
-.formoid-biz-red .rating:hover .rating-star:hover ~ .rating-star:after{
-  color: #C33F22;
+.formoid-biz-blue .rating:hover .rating-star:hover:after,
+.formoid-biz-blue .rating:hover .rating-star:hover ~ .rating-star:after{
+  color: #22B4C3;
   opacity: 0.8;
 }
-.formoid-biz-red input[type=checkbox]:checked+span:before,
-.formoid-biz-red .rating-input:checked ~ .rating-star:after{
-  color: #C33F22;
+.formoid-biz-blue input[type=checkbox]:checked+span:before,
+.formoid-biz-blue .rating-input:checked ~ .rating-star:after{
+  color: #22B4C3;
 }
-.formoid-biz-red input[type=radio]:checked+span:after {
-  background: #C33F22;
+.formoid-biz-blue input[type=radio]:checked+span:after {
+  background: #22B4C3;
 }
 
 
 /* bootstrap select */
-.formoid-biz-red .dropdown-inverse li.active > a,
-.formoid-biz-red .dropdown-inverse li.selected > a,
-.formoid-biz-red .dropdown-inverse li > a:hover,
-.formoid-biz-red .dropdown-inverse li > a:active,
-.formoid-biz-red .dropdown-inverse li > a:focus {
-	background-color: #C33F22;
+.formoid-biz-blue .dropdown-inverse li.active > a,
+.formoid-biz-blue .dropdown-inverse li.selected > a,
+.formoid-biz-blue .dropdown-inverse li > a:hover,
+.formoid-biz-blue .dropdown-inverse li > a:active,
+.formoid-biz-blue .dropdown-inverse li > a:focus {
+	background-color: #22B4C3;
 }
-.formoid-biz-red .dropdown-menu li > a:hover,
-.formoid-biz-red .dropdown-menu li > a:active,
-.formoid-biz-red .dropdown-menu li > a:focus,
-.formoid-biz-red .dropdown-submenu:hover > a {
+.formoid-biz-blue .dropdown-menu li > a:hover,
+.formoid-biz-blue .dropdown-menu li > a:active,
+.formoid-biz-blue .dropdown-menu li > a:focus,
+.formoid-biz-blue .dropdown-submenu:hover > a {
 	background-image: none;
 	background-color: rgba(255,255,255,0.2);
   outline: none;
@@ -785,15 +785,15 @@ Not advised to edit stuff below this line
 .datepicker td span.active[disabled]{
   color: #ffffff;
   background-image: none;
-  background-color: #C33F22;
+  background-color: #22B4C3;
 }
 
-/* .formoid-biz-red color scheme begin end *//* 
+/* .formoid-biz-blue color scheme begin end *//* 
 
 bootstrap 
 
 */
-.formoid-biz-red .dropdown-menu {
+.formoid-biz-blue .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -814,14 +814,14 @@ bootstrap
   background-clip: padding-box;
 }
 
-.formoid-biz-red .dropdown-menu > li > a:hover,
-.formoid-biz-red .dropdown-menu > li > a:focus,
-.formoid-biz-red .dropdown-submenu:hover > a,
-.formoid-biz-red .dropdown-submenu:focus > a {
+.formoid-biz-blue .dropdown-menu > li > a:hover,
+.formoid-biz-blue .dropdown-menu > li > a:focus,
+.formoid-biz-blue .dropdown-submenu:hover > a,
+.formoid-biz-blue .dropdown-submenu:focus > a {
   text-decoration: none;
 }
 
-.formoid-biz-red .btn-group {
+.formoid-biz-blue .btn-group {
   position: relative;
   display: inline-block;
   *display: inline;
@@ -831,11 +831,11 @@ bootstrap
   *zoom: 1;
 }
 
-.formoid-biz-red .btn-group > .dropdown-menu{
+.formoid-biz-blue .btn-group > .dropdown-menu{
 	font-size: 1em;
 }
 
-.formoid-biz-red .btn{
+.formoid-biz-blue .btn{
   text-align: left;
   cursor: pointer;
 
@@ -861,14 +861,14 @@ bootstrap
 
   font-size: 1em;
 }
-.formoid-biz-red .btn:active,
-.formoid-biz-red .btn-group.open .btn.dropdown-toggle,
-.formoid-biz-red .btn.active {
+.formoid-biz-blue .btn:active,
+.formoid-biz-blue .btn-group.open .btn.dropdown-toggle,
+.formoid-biz-blue .btn.active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.formoid-biz-red .btn.disabled,
-.formoid-biz-red .btn[disabled] {
+.formoid-biz-blue .btn.disabled,
+.formoid-biz-blue .btn[disabled] {
   background-color: #bdc3c7;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
@@ -877,11 +877,11 @@ bootstrap
   filter: alpha(opacity=70);
 }
 
-.formoid-biz-red .select {
+.formoid-biz-blue .select {
   width: 100%;
 }
 
-.formoid-biz-red .select .btn .filter-option {
+.formoid-biz-blue .select .btn .filter-option {
 	position: absolute;
 	left: 13px;
 	right: 30px;
@@ -889,24 +889,24 @@ bootstrap
   text-align: left;
 }
 
-.formoid-biz-red .select .btn .dropdown-toggle {
+.formoid-biz-blue .select .btn .dropdown-toggle {
   border-radius: 6px;
 }
-.formoid-biz-red .select .btn .dropdown-menu {
+.formoid-biz-blue .select .btn .dropdown-menu {
   min-width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.formoid-biz-red .select .btn .dropdown-menu li:not(.disabled) > a:hover small {
+.formoid-biz-blue .select .btn .dropdown-menu li:not(.disabled) > a:hover small {
   color: rgba(255, 255, 255, 0.004);
 }
 
-.formoid-biz-red .select .btn > .disabled,
-.formoid-biz-red .select .btn .dropdown-menu li.disabled > a {
+.formoid-biz-blue .select .btn > .disabled,
+.formoid-biz-blue .select .btn .dropdown-menu li.disabled > a {
   cursor: default;
 }
-.formoid-biz-red .select .caret {
+.formoid-biz-blue .select .caret {
 	position: absolute;
 	
 	border-top: 4px solid #ECECEC;
@@ -917,7 +917,7 @@ bootstrap
 	top: 49%;
 }
 
-.formoid-biz-red .dropdown-menu {
+.formoid-biz-blue .dropdown-menu {
   overflow-x: hidden;
   display: block;
   opacity: 0;
@@ -929,35 +929,35 @@ bootstrap
   transition: 0.25s;
   -webkit-backface-visibility: hidden;
 }
-.formoid-biz-red .dropdown-menu.typeahead {
+.formoid-biz-blue .dropdown-menu.typeahead {
   display: none;
   opacity: 1;
   visibility: visible;
   width: auto;
 }
-.formoid-biz-red .open > .dropdown-menu {
+.formoid-biz-blue .open > .dropdown-menu {
   margin-top: 6px;
   opacity: 1;
   visibility: visible;
 }
-.formoid-biz-red .dropdown-menu li:first-child dt + a {
+.formoid-biz-blue .dropdown-menu li:first-child dt + a {
   border-radius: 0;
 }
-.formoid-biz-red .dropdown-menu li.active > a,
-.formoid-biz-red .dropdown-menu li.selected > a,
-.formoid-biz-red .dropdown-menu li.active > a.highlighted,
-.formoid-biz-red .dropdown-menu li.selected > a.highlighted,
-.formoid-biz-red .dropdown-menu li.active > a:hover,
-.formoid-biz-red .dropdown-menu li.selected > a:hover,
-.formoid-biz-red .dropdown-menu li.active > a.highlighted:hover,
-.formoid-biz-red .dropdown-menu li.selected > a.highlighted:hover,
-.formoid-biz-red .dropdown-menu li.active > a:focus,
-.formoid-biz-red .dropdown-menu li.selected > a:focus,
-.formoid-biz-red .dropdown-menu li.active > a.highlighted:focus,
-.formoid-biz-red .dropdown-menu li.selected > a.highlighted:focus {
+.formoid-biz-blue .dropdown-menu li.active > a,
+.formoid-biz-blue .dropdown-menu li.selected > a,
+.formoid-biz-blue .dropdown-menu li.active > a.highlighted,
+.formoid-biz-blue .dropdown-menu li.selected > a.highlighted,
+.formoid-biz-blue .dropdown-menu li.active > a:hover,
+.formoid-biz-blue .dropdown-menu li.selected > a:hover,
+.formoid-biz-blue .dropdown-menu li.active > a.highlighted:hover,
+.formoid-biz-blue .dropdown-menu li.selected > a.highlighted:hover,
+.formoid-biz-blue .dropdown-menu li.active > a:focus,
+.formoid-biz-blue .dropdown-menu li.selected > a:focus,
+.formoid-biz-blue .dropdown-menu li.active > a.highlighted:focus,
+.formoid-biz-blue .dropdown-menu li.selected > a.highlighted:focus {
   color: #ffffff;
 }
-.formoid-biz-red .dropdown-menu li > a {
+.formoid-biz-blue .dropdown-menu li > a {
   padding: 6px 15px 6px;
   text-decoration: none;
   *zoom: 1;
@@ -966,73 +966,73 @@ bootstrap
 	clear: both;
 	white-space: nowrap;
 }
-.formoid-biz-red .dropdown-menu li > a:before,
-.formoid-biz-red .dropdown-menu li > a:after {
+.formoid-biz-blue .dropdown-menu li > a:before,
+.formoid-biz-blue .dropdown-menu li > a:after {
   display: table;
   content: "";
 }
-.formoid-biz-red .dropdown-menu li > a:after {
+.formoid-biz-blue .dropdown-menu li > a:after {
   clear: both;
 }
-.formoid-biz-red .dropdown-menu li > a.highlighted {
+.formoid-biz-blue .dropdown-menu li > a.highlighted {
   background: #c9cfd4;
   color: #ffffff;
 }
-.formoid-biz-red .dropdown-menu li > a.highlighted:hover,
-.formoid-biz-red .dropdown-menu li > a.highlighted:focus {
+.formoid-biz-blue .dropdown-menu li > a.highlighted:hover,
+.formoid-biz-blue .dropdown-menu li > a.highlighted:focus {
   background: #bac1c8;
   color: #ffffff;
 }
-.formoid-biz-red .dropdown-menu li > a:before {
+.formoid-biz-blue .dropdown-menu li > a:before {
   margin-top: 3px;
 }
 
-.formoid-biz-red .dropdown-menu li dt {
+.formoid-biz-blue .dropdown-menu li dt {
   margin-bottom: 3px;
   margin-top: 12px;
   padding: 0 15px;
 }
-.formoid-biz-red .dropdown-inverse {
+.formoid-biz-blue .dropdown-inverse {
   border: 1px solid rgba(255,255,255,0.2);
   padding-top: 4px;
 }
-.formoid-biz-red .dropdown-inverse li {
+.formoid-biz-blue .dropdown-inverse li {
   margin: 0 4px -2px;
 }
-.formoid-biz-red .dropdown-inverse li:first-child > a,
-.formoid-biz-red .dropdown-inverse li:last-child > a {
+.formoid-biz-blue .dropdown-inverse li:first-child > a,
+.formoid-biz-blue .dropdown-inverse li:last-child > a {
   border-radius: 0;
   padding-bottom: 7px;
 }
-.formoid-biz-red .dropdown-inverse li.active > a,
-.formoid-biz-red .dropdown-inverse li.selected > a {
+.formoid-biz-blue .dropdown-inverse li.active > a,
+.formoid-biz-blue .dropdown-inverse li.selected > a {
   position: relative;
   z-index: 1;
 }
-.formoid-biz-red .dropdown-inverse li dt {
+.formoid-biz-blue .dropdown-inverse li dt {
   padding-left: 11px;
   padding-right: 11px;
 }
-.formoid-biz-red .dropdown-inverse li .divider {
+.formoid-biz-blue .dropdown-inverse li .divider {
   margin-left: 11px;
   margin-right: 11px;
 }
-.formoid-biz-red .dropdown-inverse li > a.highlighted {
+.formoid-biz-blue .dropdown-inverse li > a.highlighted {
   background: #526476;
 }
-.formoid-biz-red .dropdown-inverse li > a.highlighted:hover,
-.formoid-biz-red .dropdown-inverse li > a.highlighted:focus {
+.formoid-biz-blue .dropdown-inverse li > a.highlighted:hover,
+.formoid-biz-blue .dropdown-inverse li > a.highlighted:focus {
   background: #677786;
 }
-.formoid-biz-red .dropdown-inverse li .divider {
+.formoid-biz-blue .dropdown-inverse li .divider {
   background-color: #526476;
   border-bottom-color: #526476;
 }
-.formoid-biz-red .dropdown-menu.pull-right {
+.formoid-biz-blue .dropdown-menu.pull-right {
 	right: 0;
 	left: auto;
 }
-.formoid-biz-red .dropdown-arrow {
+.formoid-biz-blue .dropdown-arrow {
   border-style: solid;
   border-width: 0 6px 6px;
   height: 0;
@@ -1055,7 +1055,7 @@ bootstrap
   width: 0;
   z-index: 10;
 }
-.formoid-biz-red .open > .dropdown-arrow {
+.formoid-biz-blue .open > .dropdown-arrow {
   margin-top: 0;
   opacity: 1;
 }/*!
