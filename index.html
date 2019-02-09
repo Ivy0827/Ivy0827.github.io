@@ -1,184 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <title>Concierge Management Prototype</title>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head> 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="charts.js"></script>
-    <link rel="stylesheet" type="text/css" href="customer.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="charts.js"></script>
+  <link rel="stylesheet" type="text/css" href="customer.css">
 </head>
+
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
 </style>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card w3-opacity">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#booking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONCIERGE</a>
-    <a href="#inventory" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INVENTORY</a>
-    <a href="#history" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HISTORY</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="services">SERVICES <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#top" class="w3-bar-item w3-button">TOP</a>
-        <a href="#" class="w3-bar-item w3-button">PREMIUM</a>
-        <a href="#" class="w3-bar-item w3-button">SPECIALTY</a>
-      </div>
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Concierge Management</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
+      <a href="#book" class="w3-bar-item w3-button">Book</a>
+      <a href="#inventory" class="w3-bar-item w3-button">Inventory</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/cover.png" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:1100px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="pic/cover.png" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Luxury Rentals and Concierge Services</h3>
-      <p><b>Vacation in the finest properties hand selected by Jayne - with an unparalleled level of service and hospitality</b></p>   
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/Jayne.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="width:70% ; height:70%">
     </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="pic/bg-photo-1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Homes</h3>
-      <p><b>The finest homes in the most desirable locations are across a range of price points.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="pic/sunshine.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Personal</h3>
-      <p><b>Our specialty is customer service.</b></p>    
-    </div>
-  </div>
 
-  <!-- The CONCIERGE Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="booking">
-    <h2 class="w3-wide">CONCIERGE</h2>
-    <p class="w3-opacity"><i>Customized services</i></p>
-    <p class="w3-justify">Demo how to book an inventory.</p>
-    <form action="StringFilter.html" method="get">
-      <button class="w3-button w3-black w3-section" type="submit" formtarget="_blank">Book Now</button>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Jaynes' Cottages</h1><br>
+      <h5 class="w3-center">Share passion since 2013</h5>
+      <p class="w3-large">Vacation in the finest properties hand selected by <span class="w3-tag w3-light-grey">Jayne</span> - with an unparalleled level of service and hospitality.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Jayne’s Cottages’ goal is to help all cottage owners and guests make the most of their Muskoka experience. I look forward to helping you too!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Services Section -->
+  <div class="w3-row w3-padding-64" id="services">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Services</h1><br>
+      
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">   
+    </div>
+    <button class="w3-button w3-light-grey w3-section " type="submit">Check Features</button>
+  </div>
+  
+  <hr>
+
+    <!-- Book Section -->
+    <div class="w3-row w3-padding-64" id="book">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Book A Service</h1><br>
+        <h5 class="w3-center">Give service brief here</h5>
+        <p class="w3-large">Any idea?</p>
+        <p class="w3-large w3-text-grey w3-hide-medium"> Any idea?</p>
+      </div>
+
+      <form action="#" method="get">
+        <button class="w3-button w3-black w3-section" type="submit" formtarget="">Book Now</button>
+      </form>
+      <!--  Start Bravenet.Com Service Code -->
+      <div hidden style="background-color:white;line-height: 13px;color:black;padding:10px;">
+        <a href="http://pub23.bravenet.com/calendar/show.php?usernum=1945508073" style="float: left; margin-right: 10px;color:black"><img src="https://assets.bravenet.com/common/images/cpcode/light-color-calendar.gif" width="32" height="32" alt="Free Website Calendars by Bravenet.com" border="0"></a>
+        <a href="http://pub23.bravenet.com/calendar/show.php?usernum=1945508073" style="font-size: 12px; font-weight: bold; color:black">View my Online Calendar</a><br>
+        <a href="http://www.bravenet.com/webtools/calendar/" style="font-size: 10px; color:black;">Free Calendars by Bravenet.com</a>
+        <br style="clear: left;">
+      </div>
+      <!-- End Bravenet.Com Service Code -->
+    </div>
+
+  <hr>
+
+    <!-- Inventory Section -->
+    <div class="w3-row w3-padding-64" id="inventory">
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Check Inventory</h1><br>
+        <h4>Car/Airport Service</h4>
+        <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>    
+        <h4>Private Chef</h4>
+        <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>  
+        <h4>Housekeeping</h4>
+        <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>    
+        <h4>Shopping Service</h4>
+        <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>     
+        <h4>Lily Pad Rental</h4>
+        <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>  
+        <h4>Water Trampolines</h4>
+        <h4>Water Slide</h4>
+        <h4>Jungle Gym</h4>
+        <h4>Play Park</h4>
+        <h4>Kayaks, (Stand-up Paddle) SUPs & Canoes</h4>
+        <h4>Water Sports/Flyboard Instruction</h4>
+        <h4>Yoga & SUP Yoga</h4>
+        <h4>Massage Therapy</h4>
+        <h4>Fishing Tours</h4>
+        <h4>Boat Tours</h4>
+        <h4>Boat Rentals</h4>
+        <h4>Child Care</h4>
+        <h4>Muskoka Band Rental</h4>
+        <h4>Muskoka Attractions</h4>
+        <h4>Charter Flights</h4>
+
+      </div>
+      
+      <div class="w3-col l6 w3-padding-large">
+        <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      </div>
+    </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
     </form>
-
   </div>
-
-  <!-- The Inventory Section -->
-  <!-- <div class="w3-black" id="inventory">
-      <h2 class="w3-wide w3-center">INVENTORY</h2>
-      <p class="w3-opacity w3-center"><i>Check available items</i></p><br>
-          <div id ="visualization" style="width:auto; height:auto; float:left; display:inline"></div>
-          <div id="inv_div" style="width:auto; height:auto; float:left; display:inline"></div>
-  </div> -->
-
-  <div  id="inventory">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">INVENTORY</h2>
-      <p class="w3-opacity w3-center"><i>Check available items</i></p><br>
-          <div id ="visualization" style="width: 100%;"></div>
-          <div id="inv_div"></div>    
-    </div>  
-  </div>
-
-  <!-- The History Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="history">
-    <h2 class="w3-wide w3-center">HISTORY</h2>
-    <p class="w3-opacity w3-center"><i>Show the booking history</i></p>
-    <!--Div that will hold the dashboard-->
-    <div id="dashboard" style="width:100%;">
-        <!--Divs that will hold each control and chart-->
-        <div id="control"></div>
-        <div id="chart" style="position: relative; width: 100%; height: 200px;"></div>
-        
-        <div id="junk_div" style="display: none;"></div>
-    </div>
-
-    <!--<div id="example5.3" style="height: 200px;"></div>-->
-    <div id="table_div"></div>
-
-  </div>
-
   
-  <!-- The Services Section -->
-  <div  id="top">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Services</h2>
-      <p class="w3-opacity w3-center"><i>Check our services</i></p><br> 
-    </div>  
-  </div>
-
-  
-<!-- End Page Content -->
+<!-- End page content -->
 </div>
 
-
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Cooperate with <a href="https://jaynescottages.com/" target="_blank">Jayne's Cottages</a></p>
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Cooperate with <a href="https://jaynescottages.com/" target="_blank">Jayne's Cottages</a></p>
 </footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-</script>
 
 </body>
 </html>
