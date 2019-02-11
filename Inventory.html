@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>InventoryList</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<head>
+  <link rel="stylesheet" type="text/css" href="customer.css">  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart', 'controls']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+
+        var dashboard = new google.visualization.Dashboard(
+          document.getElementById('programmatic_dashboard_div'));
+
+        // We omit "var" so that programmaticSlider is visible to changeRange.
+        var programmaticSlider = new google.visualization.ControlWrapper({
+          'controlType': 'StringFilter',
+          'containerId': 'programmatic_control_div',
+          'options': {
+            'filterColumnLabel': 'Status',
+            'ui': {'labelStacking': 'vertical'}
+          }
+        });
+        var control = new google.visualization.ControlWrapper({
+        'controlType': 'CategoryFilter',
+            'containerId': 'control_div',
+            'options': {
+            // Filter by the date axis.
+            'filterColumnIndex': 1,
+            //'filterColumnLabel':'Name',
+            ui:{
+                'allowTyping': false,
+                'allowMultiple': true,
+                'orientation': 'horizontal',
+                'showRangeValues': false,
+                'label': 'Services'
+            }
+        },
+        // Initial range: 2012-02-09 to 2012-03-20.
+        //'state': {'range': {'start': new Date(1380740460000), 'end': new Date(1380740480000)}}
+    });
+
+
+        var programmaticChart  = new google.visualization.ChartWrapper({
+          'chartType': 'Table',
+          'containerId': 'programmatic_chart_div',
+          'options': {
+            // 'width': 300,
+            // 'height': 300,
+            'legend': 'none',
+            'chartArea': {'left': 15, 'top': 15, 'right': 0, 'bottom': 0},
+            'pieSliceText': 'value'
+          }
+        });
+
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Services','Vendor','Client','BeginDate','EndDate','Notes' ],
+          ['In-Use' , 'Hoise-Cleaning','GC','Ken',new Date(0,0,0,12,0,0),new Date(0,0,0,12,0,0),'Team Leader; Management'],
+          ['Available' , 'Nanny','GC','Ivy',new Date(0,0,0,12,0,0),new Date(0,0,0,12,0,0),'Developer; Programming'],
+          ['Available' , 'Boat','GC','Princess',new Date(0,0,0,12,0,0),new Date(0,0,0,12,0,0),'Business Analyst; Research'],
+          ['Non-Available' , 'Hoise-Cleaning','GC','Janine',new Date(0,0,0,12,0,0),new Date(0,0,0,12,0,0),'Data Analyst; Analysis'],
+          ['In-Use' , 'Chief','GC','Vy',new Date(0,0,0,12,0,0),new Date(0,0,0,12,0,0),'Data Analyst; Analysis']
+        ]);
+
+        dashboard.bind(programmaticSlider,programmaticChart);
+        dashboard.bind(control,programmaticChart);
+        dashboard.draw(data);
+
+      }
+
+    </script>
+</head>
+<body>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="mysidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/LOGO.png" style="width:100%">
+  <a href="index.html#inventory" class="w3-bar-item mybutton w3-padding-large ">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <!-- <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a> -->
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Inventory</span> Status</h1>
+    <!-- <img src="images/LOGO.png" alt="boy" class="w3-image" width="300" height="400"> -->
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey " id="about">
+    <hr style="width:200px" class="w3-opacity">
+    <p>Use filter to inspect inventory status: Available/In-Use/Non-Available.
+    </p>
+    <div id="programmatic_dashboard_div">
+        <div id="programmatic_control_div"></div>      
+        <script type="text/javascript"></script>
+        <br>
+        <div id="control_div"></div>
+        <script type="text/javascript"></script>
+        <br>
+        <table class="columns">
+              <div id="programmatic_chart_div"></div>
+        </table>
+      </div>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Master List
+    </button>
+  <!-- End About Section -->
+  </div>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <p>Cooperate with <a href="https://jaynescottages.com/" target="_blank">Jayne's Cottages</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
