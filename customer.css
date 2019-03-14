@@ -52,6 +52,19 @@
 }
 
 /*non-text style*/
+.myleft_firstrow { 
+  margin-left: 100px;
+  margin-bottom: 15px;
+  float: left; 
+  margin-right: 10px; 
+  } 
+
+.myleft_secondrow { 
+    margin-left: 210px;
+    float: left; 
+    margin-right: 10px; 
+  } 
+
 .table-div {
   display: block;
   margin-left: auto;
